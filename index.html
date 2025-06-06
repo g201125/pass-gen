@@ -2,118 +2,90 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./styles/index.css">
-    <script src="./scripts/index.js" defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="./scripts/index.js" defer></script>
+  <link rel="stylesheet" href="./styles/index.css">
+  <title>Pass Generator</title>
 </head>
 
 <body>
 
 
-    <div class="app">
-        <div class="container">
-            <div class="top">
-                <h1>NEXUS</h1>
-                <p>PASSWORD GENERATOR</p>
-            </div>
 
-            <div class="result">
-                <div class="result-box"></div>
-                <button class="copy-btn"> <img src="./img/copy.svg" alt="Copy"></button>
-            </div>
+  <div class="app">
+    <div class="container">
+      <div class="top">
+        <h1>NEXUS</h1>
+        <p>PASSWORD GENERATOR</p>
+      </div>
 
-            <div class="settings">
-                <div class="strength">
-                    <div class="strength-left">
-                        <img src="./img/shield.svg" alt="">
-                        <span>PASSWORD STERNGTH</span>
-                    </div>
-                    <span class="strength-value">Very Strong</span>
-                </div>
+      <div class="result">
+        <div class="result-box"></div>
+        <button class="copy-btn"><img src="./assets/copy.svg" alt="Copy"></button>
+      </div>
 
-                <div class="setting-item">
-                    <div class="strength-label">
-                        <span>LENGTH</span>
-                        <span class="length-value">16</span>
-                    </div>
-                    <input type="slider" type="range" min="4" max="32" value="16" id="length-slider">
-
-
-
-                </div>
-
-                <div class="charecter-types">
-                    <h3>Character Types</h3>
-
-                    <div class="type-item">
-                        <span>Uppercase</span>
-                        <label class="switch">
-                            <input type="checkbox" checked id="uppercase">
-                            <span class="switch-slider"></span>
-                        </label>
-                    </div>
-
-                      <div class="type-item">
-                        <span>Lowercase</span>
-                        <label class="switch">
-                            <input type="checkbox" checked id="uppercase">
-                            <span class="switch-slider"></span>
-                        </label>
-                    </div>
-
-                      <div class="type-item">
-                        <span>NUMBER</span>
-                        <label class="switch">
-                            <input type="checkbox" checked id="uppercase">
-                            <span class="switch-slider"></span>
-                        </label>
-                    </div>
-
-                      <div class="type-item">
-                        <span>Symbols</span>
-                        <label class="switch">
-                            <input type="checkbox" checked id="symbols">
-                            <span class="switch-slider"></span>
-                        </label>
-                    </div>
-                </div>
-
-
-
-
-            </div>
-
-
-
-
-
-
-
-
+      <div class="settings">
+        <div class="strength">
+          <div class="strength-left">
+            <svg class="strength-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#d4d4d4" stroke-width="2" stroke-linecap="round"
+                 stroke-linejoin="round">
+              <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z" />
+              <path d="m9 12 2 2 4-4" />
+            </svg>
+            <span>PASSWORD STRENGTH</span>
+          </div>
+          <span class="strength-value">Very Strong</span>
         </div>
 
+        <div class="setting-item">
+          <div class="setting-label">
+            <span>LENGTH</span>
+            <span class="length-value">16</span>
+          </div>
+          <input class="slider" type="range" min="4" max="32" value="16" id="length-slider">
+        </div>
 
+        <div class="character-types">
+          <h3>CHARACTER TYPES</h3>
 
+          <div class="type-item">
+            <span>UPPERCASE</span>
+            <label class="switch">
+              <input type="checkbox" checked id="uppercase">
+              <span class="switch-slider"></span>
+            </label>
+          </div>
 
+          <div class="type-item">
+            <span>Lowercase</span>
+            <label class="switch">
+              <input type="checkbox" checked id="lowercase">
+              <span class="switch-slider"></span>
+            </label>
+          </div>
 
+          <div class="type-item">
+            <span>NUMBERS</span>
+            <label class="switch">
+              <input type="checkbox" checked id="numbers">
+              <span class="switch-slider"></span>
+            </label>
+          </div>
 
+          <div class="type-item">
+            <span>SYMBOLS</span>
+            <label class="switch">
+              <input type="checkbox" checked id="symbols">
+              <span class="switch-slider"></span>
+            </label>
+          </div>
+        </div>
 
-
-
-
-
+        <button class="generate-btn">GENERATE</button>
+      </div>
     </div>
-
-
-
-
-
-
-
-
-
+  </div>
 
 </body>
 
