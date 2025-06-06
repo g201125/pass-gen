@@ -1,0 +1,38 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+}
+
+a,
+button {
+	color: inherit;
+}
+button {
+	border: none;
+	outline: none;
+	cursor: pointer;
+	background-color: transparent;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size: inherit;
+	font-weight: bold;
+}
+
+html,
+body {
+	height: 100%;
+}
+ol,ul{
+	list-style: none;
+}
